@@ -207,6 +207,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 18
+  healthTransform: {fileID: 1258536139}
+  maxHealth: 100
+  visualHealth: {fileID: 1258536140}
+  coolDown: 0.07
 --- !u!23 &15036466
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -749,7 +753,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0.9558824, b: 0.08569979, a: 1}
+  m_Color: {r: 0, g: 1, b: 0, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:

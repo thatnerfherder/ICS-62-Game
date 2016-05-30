@@ -37,7 +37,7 @@ public class PlayerController : MonoBehaviour {
         onCD = false;
 	
 	}
-	
+
 	// Update is called once per frame
 
 	void FixedUpdate () {
@@ -52,7 +52,7 @@ public class PlayerController : MonoBehaviour {
 
     void Update()
     {
-        if(transform.localScale.x > 0.75)
+		if(transform.localScale.x > 1.2)
             transform.localScale += new Vector3(-0.001f, -0.001f, -0.001f);
         if (!onCD && currentHealth > 0)
         {

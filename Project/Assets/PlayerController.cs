@@ -28,7 +28,7 @@ public class PlayerController : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         rb = GetComponent<Rigidbody>();
-        rb.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationZ;
+		rb.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationZ | RigidbodyConstraints.FreezeRotationY;;
 
         cachedY = healthTransform.position.y;
         maxXValue = healthTransform.position.x;
@@ -52,7 +52,7 @@ public class PlayerController : MonoBehaviour {
 
     void Update()
     {
-        if(transform.localScale.x > 0.5)
+        if(transform.localScale.x > 0.75)
             transform.localScale += new Vector3(-0.001f, -0.001f, -0.001f);
         if (!onCD && currentHealth > 0)
         {
@@ -91,13 +91,15 @@ public class PlayerController : MonoBehaviour {
         {
             Destroy(other.gameObject);
             transform.localScale += new Vector3(.1f, .1f, .1f);
-            if(!onCD && currentHealth < maxHealth)
+            if(currentHealth < maxHealth)
             {
                 StartCoroutine(CoolDownDmg());
-                CurrentHealth += 25;
+				if (CurrentHealth + 25 <= 100)
+					CurrentHealth += 25;
+				else
+					CurrentHealth = 100;
             }
         }
-        
     }
 
     private float MapValues(float x, float inMin, float inMax, float outMin, float outMax)

@@ -1,0 +1,17 @@
+/Users/dominiqueadapon/Desktop/ICS-62-Game/Project/Temp/bin/Debug/Assembly-CSharp.dll.mdb
+/Users/dominiqueadapon/Desktop/ICS-62-Game/Project/Temp/bin/Debug/Assembly-CSharp.dll
+/Users/dominiqueadapon/Desktop/ICS-62-Game/Project/obj/Debug/Assembly-CSharp.dll
+/Users/dominiqueadapon/Desktop/ICS-62-Game/Project/obj/Debug/Assembly-CSharp.dll.mdb
+/Users/dominiqueadapon/Desktop/ICS-62-Game/Project/Temp/bin/Debug/UnityEngine.dll
+/Users/dominiqueadapon/Desktop/ICS-62-Game/Project/Temp/bin/Debug/UnityEditor.dll
+/Users/dominiqueadapon/Desktop/ICS-62-Game/Project/Temp/bin/Debug/UnityEngine.Networking.dll
+/Users/dominiqueadapon/Desktop/ICS-62-Game/Project/Temp/bin/Debug/UnityEngine.UI.dll
+/Users/dominiqueadapon/Desktop/ICS-62-Game/Project/Temp/bin/Debug/Mono.Cecil.dll
+/Users/dominiqueadapon/Desktop/ICS-62-Game/Project/Temp/bin/Debug/Unity.SerializationLogic.dll
+/Users/dominiqueadapon/Desktop/ICS-62-Game/Project/Temp/bin/Debug/Unity.DataContract.dll
+/Users/dominiqueadapon/Desktop/ICS-62-Game/Project/Temp/bin/Debug/ICSharpCode.NRefactory.dll
+/Users/dominiqueadapon/Desktop/ICS-62-Game/Project/Temp/bin/Debug/Unity.UNetWeaver.dll
+/Users/dominiqueadapon/Desktop/ICS-62-Game/Project/Temp/bin/Debug/Unity.UNetWeaver.dll.mdb
+/Users/dominiqueadapon/Desktop/ICS-62-Game/Project/Temp/bin/Debug/Unity.CecilTools.dll
+/Users/dominiqueadapon/Desktop/ICS-62-Game/Project/Temp/bin/Debug/Mono.Cecil.Pdb.dll
+/Users/dominiqueadapon/Desktop/ICS-62-Game/Project/Temp/bin/Debug/Mono.Cecil.Mdb.dll

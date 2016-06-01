@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour {
 
@@ -100,6 +101,10 @@ public class PlayerController : MonoBehaviour {
 					CurrentHealth = 100;
             }
         }
+		if (other.gameObject.CompareTag ("backpack")) 
+		{
+			SceneManager.LoadScene("_Scene/hallway");
+		}
     }
 
     private float MapValues(float x, float inMin, float inMax, float outMin, float outMax)

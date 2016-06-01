@@ -412,6 +412,18 @@ Transform:
 GameObject:
   m_PrefabParentObject: {fileID: 100000, guid: 011a7ccd865d44ad1a107a03f5eff214, type: 3}
   m_PrefabInternal: {fileID: 1977188545}
+--- !u!65 &1033667298
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1033667297}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 6.4235587, y: 3.467164, z: 4.1578245}
+  m_Center: {x: 1.9244211, y: 0.00061469077, z: 0.8346985}
 --- !u!65 &1033667302
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -492,7 +504,7 @@ Light:
   serializedVersion: 6
   m_Type: 0
   m_Color: {r: 0.9960446, g: 1, b: 0.71323526, a: 1}
-  m_Intensity: 8
+  m_Intensity: 5.4
   m_Range: 8.15
   m_SpotAngle: 48.8
   m_CookieSize: 10
@@ -1275,6 +1287,10 @@ Prefab:
     - target: {fileID: 400000, guid: 011a7ccd865d44ad1a107a03f5eff214, type: 3}
       propertyPath: m_LocalScale.z
       value: 0.4284355
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 011a7ccd865d44ad1a107a03f5eff214, type: 3}
+      propertyPath: m_TagString
+      value: backpack
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 011a7ccd865d44ad1a107a03f5eff214, type: 3}

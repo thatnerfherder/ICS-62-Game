@@ -55,11 +55,14 @@ public class PlayerController : MonoBehaviour {
     {
 		if(transform.localScale.x > 1.2)
             transform.localScale += new Vector3(-0.001f, -0.001f, -0.001f);
-        if (!onCD && currentHealth > 0)
-        {
-            StartCoroutine(CoolDownDmg());
-            CurrentHealth -= 1;
-        }
+		if (!onCD && currentHealth > 0) {
+			StartCoroutine (CoolDownDmg ());
+			CurrentHealth -= 1;
+		} 
+		if (currentHealth == 0)
+		{
+			SceneManager.LoadScene ("_Scene/room");
+		}
 
     }
 

@@ -11,6 +11,7 @@ GameObject:
   - 33: {fileID: 3318602}
   - 136: {fileID: 13638160}
   - 23: {fileID: 2379948}
+  - 122: {fileID: 12237610}
   m_Layer: 0
   m_Name: Capsule
   m_TagString: Capsule
@@ -63,6 +64,17 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 175812}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!122 &12237610
+Halo:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 175812}
+  m_Enabled: 1
+  m_Color:
+    serializedVersion: 2
+    rgba: 4278207758
+  m_Size: 1.5
 --- !u!136 &13638160
 CapsuleCollider:
   m_ObjectHideFlags: 1

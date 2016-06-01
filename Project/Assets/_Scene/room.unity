@@ -301,6 +301,21 @@ BoxCollider:
 Transform:
   m_PrefabParentObject: {fileID: 441290, guid: eab655ea637534945a6ad32789b06edc, type: 2}
   m_PrefabInternal: {fileID: 1121323418}
+--- !u!1 &421717748 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 175812, guid: eab655ea637534945a6ad32789b06edc, type: 2}
+  m_PrefabInternal: {fileID: 1745647598}
+--- !u!122 &421717749
+Halo:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 421717748}
+  m_Enabled: 1
+  m_Color:
+    serializedVersion: 2
+    rgba: 4278207758
+  m_Size: 1.5
 --- !u!1001 &656481766
 Prefab:
   m_ObjectHideFlags: 0
@@ -347,6 +362,21 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: eea55aa2cc6527e47a04c7b15ff22658, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &894361157 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 175812, guid: eab655ea637534945a6ad32789b06edc, type: 2}
+  m_PrefabInternal: {fileID: 1121323418}
+--- !u!122 &894361158
+Halo:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 894361157}
+  m_Enabled: 1
+  m_Color:
+    serializedVersion: 2
+    rgba: 4278207758
+  m_Size: 1.5
 --- !u!1 &956548310
 GameObject:
   m_ObjectHideFlags: 0
@@ -436,6 +466,67 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 916b2cbf28890499eb2643666153a0ec, type: 3}
   m_IsPrefabParent: 0
+--- !u!1 &1067144965
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1067144967}
+  - 108: {fileID: 1067144966}
+  m_Layer: 0
+  m_Name: Spotlight
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!108 &1067144966
+Light:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1067144965}
+  m_Enabled: 1
+  serializedVersion: 6
+  m_Type: 0
+  m_Color: {r: 0.9960446, g: 1, b: 0.71323526, a: 1}
+  m_Intensity: 8
+  m_Range: 8.15
+  m_SpotAngle: 48.8
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 0
+    m_Resolution: -1
+    m_Strength: 1
+    m_Bias: 0.05
+    m_NormalBias: 0.4
+    m_NearPlane: 0.2
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_Lightmapping: 4
+  m_BounceIntensity: 1
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
+  m_AreaSize: {x: 1, y: 1}
+--- !u!4 &1067144967
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1067144965}
+  m_LocalRotation: {x: 0.65991145, y: 0, z: 0, w: 0.7513435}
+  m_LocalPosition: {x: -1.37, y: 4.74, z: 8.2}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 15
 --- !u!4 &1092525938 stripped
 Transform:
   m_PrefabParentObject: {fileID: 441290, guid: eab655ea637534945a6ad32789b06edc, type: 2}
@@ -682,19 +773,19 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 10807604, guid: 393214f45a1096e4e8ed5cdff857694a, type: 2}
       propertyPath: m_Intensity
-      value: 3.45
+      value: 4.11
       objectReference: {fileID: 0}
     - target: {fileID: 10807604, guid: 393214f45a1096e4e8ed5cdff857694a, type: 2}
       propertyPath: m_Color.r
-      value: 1
+      value: 0.5514706
       objectReference: {fileID: 0}
     - target: {fileID: 10807604, guid: 393214f45a1096e4e8ed5cdff857694a, type: 2}
       propertyPath: m_Color.g
-      value: 1
+      value: 0.5514706
       objectReference: {fileID: 0}
     - target: {fileID: 10807604, guid: 393214f45a1096e4e8ed5cdff857694a, type: 2}
       propertyPath: m_Color.b
-      value: 1
+      value: 0.5514706
       objectReference: {fileID: 0}
     - target: {fileID: 10807604, guid: 393214f45a1096e4e8ed5cdff857694a, type: 2}
       propertyPath: m_Type
@@ -777,6 +868,21 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: eab655ea637534945a6ad32789b06edc, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1657697067 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 175812, guid: eab655ea637534945a6ad32789b06edc, type: 2}
+  m_PrefabInternal: {fileID: 1184525585}
+--- !u!122 &1657697068
+Halo:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1657697067}
+  m_Enabled: 1
+  m_Color:
+    serializedVersion: 2
+    rgba: 4278207758
+  m_Size: 1.5
 --- !u!4 &1721553409 stripped
 Transform:
   m_PrefabParentObject: {fileID: 441290, guid: eab655ea637534945a6ad32789b06edc, type: 2}
@@ -1140,19 +1246,19 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 011a7ccd865d44ad1a107a03f5eff214, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.5000002
+      value: 0.50000024
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 011a7ccd865d44ad1a107a03f5eff214, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.4999998
+      value: 0.49999982
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 011a7ccd865d44ad1a107a03f5eff214, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.49999988
+      value: 0.4999999
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 011a7ccd865d44ad1a107a03f5eff214, type: 3}
       propertyPath: m_LocalRotation.w
-      value: -0.50000006
+      value: -0.5000001
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 011a7ccd865d44ad1a107a03f5eff214, type: 3}
       propertyPath: m_RootOrder
@@ -1227,3 +1333,18 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c21f03be02a104e6191b88008b260ac0, type: 3}
   m_IsPrefabParent: 0
+--- !u!1 &2135428282 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 175812, guid: eab655ea637534945a6ad32789b06edc, type: 2}
+  m_PrefabInternal: {fileID: 1559106901}
+--- !u!122 &2135428286
+Halo:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2135428282}
+  m_Enabled: 1
+  m_Color:
+    serializedVersion: 2
+    rgba: 4278207758
+  m_Size: 1.5

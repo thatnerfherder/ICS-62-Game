@@ -42,17 +42,19 @@ public class PlayerController : MonoBehaviour {
 	// Update is called once per frame
 
 	void FixedUpdate () {
-
+/*
         float moveHorizontal = Input.GetAxis("Horizontal");
         float moveVertical = Input.GetAxis("Vertical");
 
         Vector3 movement = new Vector3(moveHorizontal, 0.0f, moveVertical);
 
         rb.AddForce(movement * speed);
+        */
     }
 
     void Update()
     {
+        HandleMovement();
 		if(transform.localScale.x > 1.2)
             transform.localScale += new Vector3(-0.001f, -0.001f, -0.001f);
 		if (!onCD && currentHealth > 0) {
@@ -115,6 +117,10 @@ public class PlayerController : MonoBehaviour {
         return (x - inMin) * (outMax - outMin) / (inMax - inMin) + outMin;
     }
 
+    private void HandleMovement()
+    {
+        float translation = speed * Time.deltaTime;
 
-   
+        transform.Translate(new Vector3(Input.GetAxis("Horizontal") * translation, 0, Input.GetAxis("Vertical") * translation));
+    }
 }

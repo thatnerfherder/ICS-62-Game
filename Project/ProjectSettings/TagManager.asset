@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Capsule
   - backpack
+  - end of hallway
+  - beginning of hallway
   layers:
   - Default
   - TransparentFX

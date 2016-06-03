@@ -10,7 +10,7 @@ public class PlayerController : MonoBehaviour {
     private float cachedY;
     private float minXValue;
     private float maxXValue;
-    private int currentHealth;
+    public int currentHealth;
 
     private int CurrentHealth
     {
@@ -61,11 +61,11 @@ public class PlayerController : MonoBehaviour {
 			StartCoroutine (CoolDownDmg ());
 			CurrentHealth -= 1;
 		} 
-		if (currentHealth == 0)
+		///if (currentHealth == 0)
 		{
-			SceneManager.LoadScene ("_Scene/room");
+		///	SceneManager.LoadScene ("_Scene/room");
 		}
-
+        ///
     }
 
     private void HandleHealth()

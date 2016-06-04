@@ -143,6 +143,39 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 969a2c88121c5430bb2fc3f1dd09f7ff, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &114968841 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 152718, guid: c0cc3c26cebbdf94385edcdae97f9d01, type: 2}
+  m_PrefabInternal: {fileID: 1860456006}
+--- !u!114 &114968842
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 114968841}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f69b27a6efafb04583615fa2b23e7d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerHealth: {fileID: 1158560360}
+--- !u!95 &114968843
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 114968841}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: dc41c45c1c1cc534fa089593ec696f5c, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!1 &129172995
 GameObject:
   m_ObjectHideFlags: 0
@@ -4274,6 +4307,12 @@ RectTransform:
 GameObject:
   m_PrefabParentObject: {fileID: 128886, guid: da3e12da161504bc686307beea8338b8, type: 2}
   m_PrefabInternal: {fileID: 713168264}
+--- !u!114 &1158560360 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 11462872, guid: da3e12da161504bc686307beea8338b8,
+    type: 2}
+  m_PrefabInternal: {fileID: 713168264}
+  m_Script: {fileID: 11500000, guid: 039d03917755c5a40a785c40f9bf324d, type: 3}
 --- !u!1001 &1168212545
 Prefab:
   m_ObjectHideFlags: 0
@@ -4949,7 +4988,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.44852942, g: 0.38916522, b: 0.38916522, a: 1}
+  m_Color: {r: 0.33823532, g: 0.25118947, b: 0.25118947, a: 0}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -5597,7 +5636,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:

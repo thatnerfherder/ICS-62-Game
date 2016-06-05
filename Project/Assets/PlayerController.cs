@@ -11,6 +11,7 @@ public class PlayerController : MonoBehaviour {
     private float minXValue;
     private float maxXValue;
     public int currentHealth;
+	//private float currentSpeed;
 
     private int CurrentHealth
     {
@@ -42,19 +43,20 @@ public class PlayerController : MonoBehaviour {
 	// Update is called once per frame
 
 	void FixedUpdate () {
-/*
+
         float moveHorizontal = Input.GetAxis("Horizontal");
         float moveVertical = Input.GetAxis("Vertical");
 
         Vector3 movement = new Vector3(moveHorizontal, 0.0f, moveVertical);
 
+		//currentSpeed += idk
         rb.AddForce(movement * speed);
-        */
+
     }
 
     void Update()
     {
-        HandleMovement();
+        //HandleMovement();
 		if(transform.localScale.x > 1.2)
             transform.localScale += new Vector3(-0.001f, -0.001f, -0.001f);
 		if (!onCD && currentHealth > 0) {

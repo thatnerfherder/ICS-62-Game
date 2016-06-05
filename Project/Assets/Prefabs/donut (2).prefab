@@ -103,7 +103,7 @@ Halo:
   m_Enabled: 1
   m_Color:
     serializedVersion: 2
-    rgba: 4279195136
+    rgba: 4280325632
   m_Size: 1.5
 --- !u!135 &13565620
 SphereCollider:

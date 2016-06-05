@@ -4,7 +4,8 @@ using UnityEngine.SceneManagement;
 public class GameOverManager : MonoBehaviour
 {
     public PlayerController playerHealth; // Reference to the player's health.
-	public float restartDelay = 3f;
+	 float restartDelay = 1.5f;
+	public static bool diedOnce = false;
 
 
 
@@ -24,6 +25,7 @@ public class GameOverManager : MonoBehaviour
         // If the player has run out of health...
         if (playerHealth.currentHealth <= 0)
         {
+			diedOnce = true;
             // ... tell the animator the game is over.
             anim.SetTrigger("GameOver");
 

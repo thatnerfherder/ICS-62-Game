@@ -52,17 +52,27 @@ public class PlayerController : MonoBehaviour {
 		//currentSpeed += idk
         rb.AddForce(movement * speed);
 
+
+		if(transform.localScale.x > 1.2)
+			transform.localScale += new Vector3(-0.001f, -0.001f, -0.001f);
+		if (!onCD && currentHealth > 0) {
+			StartCoroutine (CoolDownDmg ());
+			CurrentHealth -= 1;
+		}
+
+
+
     }
 
     void Update()
     {
-        //HandleMovement();
-		if(transform.localScale.x > 1.2)
-            transform.localScale += new Vector3(-0.001f, -0.001f, -0.001f);
-		if (!onCD && currentHealth > 0) {
-			StartCoroutine (CoolDownDmg ());
-			CurrentHealth -= 1;
-		} 
+//        //HandleMovement();
+//		if(transform.localScale.x > 1.2)
+//            transform.localScale += new Vector3(-0.001f, -0.001f, -0.001f);
+//		if (!onCD && currentHealth > 0) {
+//			StartCoroutine (CoolDownDmg ());
+//			CurrentHealth -= 1;
+//		} 
 		///if (currentHealth == 0)
 		{
 		///	SceneManager.LoadScene ("_Scene/room");

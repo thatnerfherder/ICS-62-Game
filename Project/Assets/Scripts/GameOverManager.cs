@@ -3,7 +3,8 @@ using UnityEngine.SceneManagement;
 
 public class GameOverManager : MonoBehaviour
 {
-    public PlayerController playerHealth;       // Reference to the player's health.
+    public PlayerController playerHealth; // Reference to the player's health.
+	public float restartDelay = 3f;
 
 
 
@@ -28,8 +29,13 @@ public class GameOverManager : MonoBehaviour
 
             restartTimer += Time.deltaTime;
 
+			if (restartTimer >= restartDelay) 
+			{
+				SceneManager.LoadScene ("_Scene/room");
+			}
+
             // quit button stuff, needs some work
-            //if (restartTimer >= restartDelay)
+				//if (restartTimer >= restartDelay)
             {
                 // .. then reload the currently loaded level.
                 //SceneManager.LoadScene(SceneManager.GetActiveScene().name);

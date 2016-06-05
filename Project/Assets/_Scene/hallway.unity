@@ -5000,7 +5000,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 0}
+  m_Color: {r: 0.07352942, g: 0.07352942, b: 0.07352942, a: 0}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -6885,6 +6885,10 @@ Prefab:
     - target: {fileID: 22465150, guid: c0cc3c26cebbdf94385edcdae97f9d01, type: 2}
       propertyPath: m_RootOrder
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11416720, guid: c0cc3c26cebbdf94385edcdae97f9d01, type: 2}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c0cc3c26cebbdf94385edcdae97f9d01, type: 2}

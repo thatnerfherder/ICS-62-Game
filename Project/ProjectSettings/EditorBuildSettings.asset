@@ -9,3 +9,5 @@ EditorBuildSettings:
     path: Assets/_Scene/room.unity
   - enabled: 1
     path: Assets/_Scene/hallway.unity
+  - enabled: 1
+    path: Assets/_Scene/THE ROOM.unity

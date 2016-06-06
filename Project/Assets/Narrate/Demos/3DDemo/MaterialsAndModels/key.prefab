@@ -340,7 +340,7 @@ MonoBehaviour:
   onTrigger: 1
   ByNameOrTag: 0
   TriggeredBy:
-  - 506c61796572
+  - Player
 --- !u!114 &11442030
 MonoBehaviour:
   m_ObjectHideFlags: 1

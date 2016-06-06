@@ -409,7 +409,7 @@ MonoBehaviour:
   subManager: {fileID: 11419828}
   pressToSkip: 1
   pressToContinue: 1
-  buttonName: 5375626d6974
+  buttonName: Submit
   disableCharacterWhileNarrating: 1
   characterController: {fileID: 0}
   defaultPhraseDuration: 3

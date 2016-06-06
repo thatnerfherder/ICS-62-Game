@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class GUI_Button : MonoBehaviour {
 
@@ -11,6 +12,8 @@ public class GUI_Button : MonoBehaviour {
 	//private GUI_Button theButton = GUI.Button (position, buttonImage);
 	public static bool buttonPressed = false;
 	public int responseTime;
+	public GameObject trigger; 
+	//public OnEnableNarrationTrigger onEnable;
 
 
 //	void FixedUpdate()
@@ -18,25 +21,39 @@ public class GUI_Button : MonoBehaviour {
 //		Debug.Log (buttonClicks);
 //	}
 
+//	void Awake()
+//	{
+//		onEnable = GetComponent<OnEnableNarrationTrigger> ();
+//	}
+
 	void OnGUI()
 	{
-		if (playerHealth.currentHealth > 0 && GameOverManager.diedOnce) {
+		if (playerHealth.currentHealth > 0 && GameOverManager.diedOnce && buttonClicks < 10) {
 			if (GUI.Button (position, buttonImage)) 
 			{
 				buttonClicks += 1;
 				position.x = rnd.Next (100, Screen.width - 200);
 				position.y = rnd.Next (100, Screen.height - 100);
+				//ButtonPressed ();
 				StartCoroutine (ButtonPressed ());
 			}
 		}
-
+		if (buttonClicks >= 10)
+			SceneManager.LoadScene ("_Scene/THE ROOM");
 
 	}
 
+//	void ButtonPressed()
+//	{
+//		trigger.gameObject.SetActive (true);
+//		trigger.gameObject.SetActive (false);
+//
+//	}
+
 	IEnumerator ButtonPressed()
 	{
-		buttonPressed = true;
+		trigger.gameObject.SetActive (true);
 		yield return new WaitForSeconds(responseTime);
-		buttonPressed = false;
+		trigger.gameObject.SetActive (false);
 	}
 }

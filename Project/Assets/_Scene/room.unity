@@ -102,7 +102,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerHealth: {fileID: 1919299213}
-  buttonImage: {fileID: 0}
+  buttonImage1: {fileID: 2800000, guid: 5addc2a8bcf104a28bb7dd2b8f1903b7, type: 3}
   responseTime: 1
   trigger: {fileID: 310659227}
 --- !u!4 &15036469 stripped
@@ -391,15 +391,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   whenEndReached: 4
-  loopNarrations: 1
-  shuffle: 0
+  loopNarrations: 0
+  shuffle: 1
   narrations:
   - busyBehavior: 0
     singleAudio_MultiSub: 0
     mainAudio: {fileID: 0}
     phrases:
     - audio: {fileID: 0}
-      text: I can't
+      text: I can't.
       duration: 1
       drawAudio: 1
       lastCalculatedHeight: 90
@@ -428,6 +428,20 @@ MonoBehaviour:
     phrases:
     - audio: {fileID: 0}
       text: It's not that easy.
+      duration: 1
+      drawAudio: 1
+      lastCalculatedHeight: 90
+      move: 0
+    LoopAudioForDuration: 0
+    expanded: 1
+    lastCalculatedHeight: 178
+    useSmartSubs: 0
+  - busyBehavior: 0
+    singleAudio_MultiSub: 0
+    mainAudio: {fileID: 0}
+    phrases:
+    - audio: {fileID: 0}
+      text: I can't just stop.
       duration: 1
       drawAudio: 1
       lastCalculatedHeight: 90
@@ -565,7 +579,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22472304, guid: 81bc1efb6a09c7a468f85500c18ef233, type: 2}
       propertyPath: m_SizeDelta.y
-      value: 113
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 11464564, guid: 81bc1efb6a09c7a468f85500c18ef233, type: 2}
       propertyPath: pressToSkip

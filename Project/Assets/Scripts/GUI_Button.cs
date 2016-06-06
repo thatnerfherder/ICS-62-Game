@@ -6,7 +6,11 @@ public class GUI_Button : MonoBehaviour {
 
 	public static int buttonClicks;
 	public PlayerController playerHealth;
-	public Texture2D buttonImage = null;
+
+	public Texture2D buttonImage1 = null;
+	//public Texture2D buttomImage2 = null;
+
+
 	private System.Random rnd = new System.Random();
 	private Rect position = new Rect (Screen.width - 200, Screen.height - 100, 150, 75);
 	//private GUI_Button theButton = GUI.Button (position, buttonImage);
@@ -29,7 +33,7 @@ public class GUI_Button : MonoBehaviour {
 	void OnGUI()
 	{
 		if (playerHealth.currentHealth > 0 && GameOverManager.diedOnce && buttonClicks < 10) {
-			if (GUI.Button (position, buttonImage)) 
+			if (GUI.Button (position, buttonImage1)) 
 			{
 				buttonClicks += 1;
 				position.x = rnd.Next (100, Screen.width - 200);
